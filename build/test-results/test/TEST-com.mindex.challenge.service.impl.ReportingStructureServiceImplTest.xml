@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mindex.challenge.service.impl.ReportingStructureServiceImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-01-26T22:25:18" hostname="DESKTOP-HFQRM0G" time="0.02">
+  <properties/>
+  <testcase name="testGetReportingStructure" classname="com.mindex.challenge.service.impl.ReportingStructureServiceImplTest" time="0.02"/>
+  <system-out><![CDATA[2025-01-26T17:25:18.052-05:00  INFO 4276 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.mindex.challenge.service.impl.ReportingStructureServiceImplTest]: ReportingStructureServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-01-26T17:25:18.053-05:00  INFO 4276 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.mindex.challenge.ChallengeApplication for test class com.mindex.challenge.service.impl.ReportingStructureServiceImplTest
+2025-01-26T17:25:18.061-05:00 DEBUG 4276 --- [o-auto-1-exec-7] c.m.c.c.ReportingStructureController     : Received reportingStructure create request for id [16a596ae-edd3-4847-99fe-c4518e82c86f]
+2025-01-26T17:25:18.061-05:00 DEBUG 4276 --- [o-auto-1-exec-7] c.m.c.s.i.ReportingStructureServiceImpl  : Getting reporting structure for employee with id [16a596ae-edd3-4847-99fe-c4518e82c86f]
+2025-01-26T17:25:18.061-05:00 DEBUG 4276 --- [o-auto-1-exec-7] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee with id [16a596ae-edd3-4847-99fe-c4518e82c86f]
+2025-01-26T17:25:18.064-05:00 DEBUG 4276 --- [o-auto-1-exec-7] c.m.c.s.i.ReportingStructureServiceImpl  : Counting reports for direct report [b7839309-3348-463b-a7e3-5de1c168beb3]
+2025-01-26T17:25:18.064-05:00 DEBUG 4276 --- [o-auto-1-exec-7] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee with id [b7839309-3348-463b-a7e3-5de1c168beb3]
+2025-01-26T17:25:18.065-05:00 DEBUG 4276 --- [o-auto-1-exec-7] c.m.c.s.i.ReportingStructureServiceImpl  : Counting reports for direct report [03aa1462-ffa9-4978-901b-7c001562cf6f]
+2025-01-26T17:25:18.067-05:00 DEBUG 4276 --- [o-auto-1-exec-7] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee with id [03aa1462-ffa9-4978-901b-7c001562cf6f]
+2025-01-26T17:25:18.068-05:00 DEBUG 4276 --- [o-auto-1-exec-7] c.m.c.s.i.ReportingStructureServiceImpl  : Counting reports for direct report [62c1084e-6e34-4630-93fd-9153afb65309]
+2025-01-26T17:25:18.068-05:00 DEBUG 4276 --- [o-auto-1-exec-7] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee with id [62c1084e-6e34-4630-93fd-9153afb65309]
+2025-01-26T17:25:18.070-05:00 DEBUG 4276 --- [o-auto-1-exec-7] c.m.c.s.i.ReportingStructureServiceImpl  : Counting reports for direct report [c0c2293d-16bd-4603-8e08-638a9d18b22c]
+2025-01-26T17:25:18.070-05:00 DEBUG 4276 --- [o-auto-1-exec-7] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee with id [c0c2293d-16bd-4603-8e08-638a9d18b22c]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
