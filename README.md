@@ -1,3 +1,50 @@
+# Documentation
+## Endpoints
+POST /compensation route used for creating a compensation object for an employee
+<br />
+Ex: http://localhost:8080/compensation
+```
+{
+"employeeId": "16a596ae-edd3-4847-99fe-c4518e82c86f",
+"salary": 55000.00,
+"effectiveDate": "2025-01-26T00:00:00.000Z"
+}
+```
+GET /compensation/{id} route used for getting the compensation object for an employee
+<br />
+Ex: http://localhost:8080/compensation/16a596ae-edd3-4847-99fe-c4518e82c86f
+<br /><br />
+PUT /compensation/{id} route used for updating the compensation object for an employee
+<br />
+Ex: http://localhost:8080/compensation/16a596ae-edd3-4847-99fe-c4518e82c86f
+```
+{
+"employeeId": "16a596ae-edd3-4847-99fe-c4518e82c86f",
+"salary": 75000.00,
+"effectiveDate": "2025-01-27T00:00:00.000Z"
+}
+```
+GET /reporting-structure/{id} route used for returning a ReportingStructure object for an employee
+<br />
+The ReportingStructure object contains two fields, the first being an Employee object, and the second being an integer of
+numberOfReports.
+<br />
+The numberOfReports field is the total number of reports under a given employee. The number of reports is
+determined by the number of `directReports` for an employee, all of their distinct reports, and so on.
+<br />
+Ex: http://localhost:8080/reporting-structure/16a596ae-edd3-4847-99fe-c4518e82c86f
+
+## Testing
+Individual tests can be conducted using an API Platform like Postman or Insomnia. You can use this to create requests 
+for the above endpoints with the examples provided. 
+<br /><br /> 
+Unit tests have also been implemented in the src/test directory. To run these tests, use ./gradlew test.
+
+## Changes to the code
+To implement any changes to the code, please add them to the src/main/java/mindex/challenge directory. 
+<br /> 
+To implement tests, please add them to the src/test directory.
+
 # Coding Challenge
 ## What's Provided
 A simple [Spring Boot](https://projects.spring.io/spring-boot/) web application has been created and bootstrapped with data. The application contains 
